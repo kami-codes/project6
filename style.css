@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: -100px;
+    bottom: 0;
+    
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: max-content;
+    padding: 40px 80px;
+    color: white;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.9);
+}
+label {
+    display: inline-block;
+    margin-right: 9px;
+    padding: 5px 0;
+
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+input {
+    display: inline-block;
+    padding: 7px 2px;
+    margin: 2px 0 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.txt {
+    min-width: 300px;
+}
+
+.gender {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.btn {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    margin: 20px auto;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    padding: 7px 10px !important;
+    border-radius: 9px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+
+input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.7);
+
+}
+@media screen and (max-width: 480px) {
+    
+    body{
+        display: block;
+    }
+    .container {
+    color: white;
+    margin: auto;
+    top: 150px;
+    border-radius: 10px;
+    padding: 20px 30px;
+
+    
+    }
+
+    label {
+        font-size: 1rem;
+        padding: 2px 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        font-weight: 300;
+    }
+    .txt {
+    min-width: 250px;
+}
+.vid{
+    position: fixed;
+    left: -180%;
+    min-width: 50%;
+}
+    
+
+}
